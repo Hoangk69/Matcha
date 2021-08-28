@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon"href="./images/tv.png">
+	<title>Huy Hoàng Man</title>
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#"><img src="./images/logo.png" class="logo"></img></a>
+			<ul type="none">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">What's new</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>
+					It's not just Coffee<br>It's <span>Starbucks</span>
+				</h2>
+				<p>Starbucks agency is an american multinational chain of coffeehouses and roastery reserves founded in seattle, washington. As the sector's biggest coffeehouse chain, starbucks is seen to be the principle illustration of the usa' 2d wave of coffee way of life. As of early 2020, the business enterprise operates over 30,000 locations global in greater than 70 nations.</p>
+				<a href="#">Learn More</a> 
+			</div>
+			<div class="imgBox">
+				<img src="./images/img1.png"class="Starbucks">
+			</div>
+		</div>
+		<ul class="thumb" type="none">
+			<li><img src="./images/thumb1.png" onclick="imgSlider('./images/img1.png');changeCircleColor('#017143')"></li>
+			<li><img src="./images/thumb2.png" onclick="imgSlider('./images/img2.png');changeCircleColor('#eb7495')"></li>
+			<li><img src="./images/thumb3.png" onclick="imgSlider('./images/img3.png');changeCircleColor('#d7521')"></li>
+		</ul>
+		<ul class="sci" type="none">
+			<li><a href="https://www.facebook.com/huyhoangmankx/" target="_blank"><img src="./images/facebook.png"></a></li>
+			<li><a href="https://twitter.com/huyhoangmankx" target="_blank"><img src="./images/twitter.png"></a></li>
+			<li><a href="https://www.instagram.com/huyhoangman/" target="_blank"><img src="./images/instagram.png"></a></li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.Starbucks').src = anything;
+		}
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle')
+			circle.style.background = color;
+		}
+	</script>
+</body>
+</html>
